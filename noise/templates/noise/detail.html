@@ -55,10 +55,12 @@ function myMap() {
     ];
     var x = 0;
     {% for sensor in all_sensors %}
+        locations[x][1] = {{  sensor.latitude }};
+        locations[x][2] = {{ sensor.longitude }};
         {% if sensor.noise == 1 %}
             locations[x][3] = 1;
-            x = x + 1;
         {% endif %}
+        x = x + 1;
     {% endfor %}
     var mapCanvas = document.getElementById("googleMap");
     var myCenter = new google.maps.LatLng(28.542741,77.193318);
