@@ -27,6 +27,7 @@ urlpatterns = [
     url(r'^$',views.home,name='home'),
     url(r'^future/$',views.future),
     url(r'^team/$',views.team),
+    url(r'^ajax/get_context/$', views.get_context, name='get_context'),
 ]
 
 urlpatterns = format_suffix_patterns(urlpatterns)
