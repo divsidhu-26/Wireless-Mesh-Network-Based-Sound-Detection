@@ -28,7 +28,63 @@ li a:hover:not(.active) {
 
 .active {
     background-color: #4CAF50;
+}
 
+html{
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
 </style>
 </head>
 <body>
@@ -41,7 +97,69 @@ li a:hover:not(.active) {
   <li><a class="active" href="/team">Team</a></li>
 </ul>
 
+<h2>Supervisors</h2>
+<!-- <p>Resize the browser window to see the effect.</p> -->
+<br>
+<div class="row">
+  <div class="column">
+     <div class="card">
+ <!--     <img src="ayush.png" alt="Ayush" style="width:100%">
+  -->    <div class="container">
+        <h2>M. Balakrishnan</h2>
+        <p class="title">Professor Supervisor</p>
+        </div>
+    </div>
+  </div>
+  <div class="column">
+     <div class="card">
+ <!--     <img src="ayush.png" alt="Ayush" style="width:100%">
+  -->    <div class="container">
+        <h2>Anupam Sobti</h2>
+        <p class="title">Mentor</p>
+        </div>
+    </div>
+  </div>
+</div>
+<h2>The Team</h2>
+<div class="row">
+  <div class="column">
+     <div class="card">
+ <!--     <img src="ayush.png" alt="Ayush" style="width:100%">
+  -->    <div class="container">
+        <h2>Ayush Jain</h2>
+        <p class="title">Entry No. 2015EE10641</p>
+        </div>
+    </div>
+  </div>
 
+  <div class="column">
+    <div class="card">
+ <!--      <img src="/w3images/team2.jpg" alt="Mike" style="width:100%">
+   -->   <div class="container">
+        <h2>Divgian Singh Sidhu</h2>
+        <p class="title">Entry No. 2015CS10226</p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+<!--       <img src="/w3images/team3.jpg" alt="John" style="width:100%">
+ -->    <div class="container">
+        <h2>Abhay Chandra</h2>
+        <p class="title">Entry No. 2015EE10781</p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+<!--       <img src="/w3images/team3.jpg" alt="John" style="width:100%">
+ -->    <div class="container">
+        <h2>Shivam Chandra</h2>
+        <p class="title">Entry No. 2015EE10379</p>
+      </div>
+    </div>
+  </div>
+</div>
 </body>
 </html>
 

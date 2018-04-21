@@ -34,14 +34,57 @@ li a:hover:not(.active) {
 <body>
 
 <ul>
-  <li><a class="active" href="/">Home</a></li>
-  <li><a href="/map_sensors/">Sensor Map</a></li>
-  <li><a href="/list_sensors/">Sensor List</a></li>
-  <li><a href="/future">Future Prospects</a></li>
-  <li><a href="/team">Team</a></li>
+  <li style="color:red;font-weight:normal;"><a class="active" href="/">Home</a></li>
+  <li style="color:red;font-weight:normal;"><a href="/map_sensors/">Sensor Map</a></li>
+  <li style="color:red;font-weight:normal;"><a href="/list_sensors/">Sensor List</a></li>
+  <li style="color:red;font-weight:normal;"><a href="/future">Future Prospects</a></li>
+  <li style="color:red;font-weight:normal;"><a href="/team">Team</a></li>
 </ul>
-{% block body %}
-{% endblock %}
+
+<h4 style="color:white;"> sd</h4>
+<h2>Introduction</h2>
+<h4><p style="color:red;font-weight:normal;">Noise level monitoring is required at places where low noise is a desirability. This has been implemented easily by using embedded systems in our project. This website is an integral component of our project that aims to create a mesh network of Arduino based sound sensors for the purpose of sound detection. These sensors ping their location in the event of a high intensity sound activity. This information is relayed along the Arduino nodes to the central Raspberry Pi node which uploads this data directly to this website hosted on the Baadal server.</p></h4>
+<h4 style="color:white;"> sd</h4>
+<h2>Objectives</h2>
+<h4>
+<ol>
+	<li style="color:red;font-weight:normal;">To create a wireless sensor network in the campus for noise level monitoring </li><br/>
+	<li style="color:red;font-weight:normal;">Model the network as a dedicated mesh of sound sensors deployed on Arduino nodes with a central Raspberry Pi node</li> <br/>
+	<li style="color:red;font-weight:normal;">Record and maintain the data computed on the Raspberry Pi to the server, in the event of a noise activity </li><br/>
+	<li style="color:red;font-weight:normal;">Use this website to display the campus map with a blip at the location of the ping source.</li><br/>
+</ol>
+
+<h4 style="color:white;"> sd</h4>
+<h2>Method</h2>
+<h4>
+<ol>	
+	<li style="color:red;font-weight:normal;">The sound module(KY-037) detects the presence of noise.</li><br/>
+	<li style="color:red;font-weight:normal;"> Arduino UNO board (edge node) pings the sensor location through XBee modules.</li><br/> 
+	<li style="color:red;font-weight:normal;">The signal is carried in a relay along edge nodes of mesh network.</li><br/>
+	<li style="color:red;font-weight:normal;">The signal finally reaches the Raspberry Pi (RPi) module (sensor node). </li><br/>
+	<li style="color:red;font-weight:normal;">The RPi module uploads the data on a server </li><br/>
+	<li style="color:red;font-weight:normal;">Blip at the location of  the high intensity sound activity on the institute map.</li><br/>
+</ol>
+
+<h3 style="color:white;"> sdaddsdsdadsasadasdasdsads</h3>
+<h2>Key-Hardware Components used:</h2>
+<ol>
+	<li style="color:red;font-weight:normal;"> XBee S2C RF modules</li><br/>
+	<li style="color:red;font-weight:normal;"> Arduino Uno Modules</li><br/>
+	<li style="color:red;font-weight:normal;"> Raspberry Modules</li><br/>
+	<li style="color:red;font-weight:normal;"> KY-037 Sound Sensor Modules</li>
+	<li style="color:red;font-weight:normal;"> External Power Source (9 V Batteries)</li>
+</ol>
+<br/>
+<h2>Key Softwares used:</h2>
+<ol>
+	<li style="color:red;font-weight:normal;"> XCTU software by DigiKey</li><br/>
+	<li style="color:red;font-weight:normal;"> Arduino IDE</li><br/>
+	<li style="color:red;font-weight:normal;"> Raspbian OS for Raspberry Pi 3</li><br/>
+	<li style="color:red;font-weight:normal;"> Django Web Framework</li><br/>
+</ol>
+
+
 
 </body>
 </html>

@@ -21,10 +21,11 @@ def get_context(request):
     ns0 = Sensor.objects.all()[0].noise
     ns1 = Sensor.objects.all()[1].noise
     ns2 = Sensor.objects.all()[2].noise
+    ns3 = Sensor.objects.all()[3].noise
     s0 = int(request.GET.get('s0', ns0))
     s1 = int(request.GET.get('s1', ns1))
     s2 = int(request.GET.get('s2', ns2))
-    
+    s3 = int(request.GET.get('s3', ns3))
     data = {
         'is_different' : 0
     }
@@ -38,7 +39,9 @@ def get_context(request):
     if (ns2 != s2):
         print("4")
         data['is_different'] = 1;
-      
+    if(ns3 != s3):
+        print("5")
+        data['is_different'] = 1;
     return JsonResponse(data)
 
 # Create your views here.
