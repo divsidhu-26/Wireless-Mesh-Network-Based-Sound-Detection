@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<data>
+  <profile>
+    <profile_version>1</profile_version>
+    <description_file>XBee_s2c/xb24-s2c-th_405F.xml</description_file>
+    <flash_fw_action>1</flash_fw_action>
+    <description xml:space="preserve">Coordinator</description>
+    <settings>
+      <setting command="ID">1234</setting>
+      <setting command="ZS"></setting>
+      <setting command="CE">1</setting>
+      <setting command="DL">FFFF</setting>
+      <setting command="NI">Coordinator</setting>
+    </settings>
+  </profile>
+</data>
