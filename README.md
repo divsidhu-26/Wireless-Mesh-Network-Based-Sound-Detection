@@ -8,6 +8,8 @@ To run the website on your laptop,
 Voila! Website gets deployed at http://127.0.0.1:<port-number>
 
 The Arduino folder contains the codes for the arduinos
+1. r1ino: Arduino code for a node not on the edge of the mesh. It transmits value received both from a sound sensor and from        </t>another sensor node
+2. r2.ino : Arduino code for reading value from a sound sensor on an edge node and transmitting it through XBee
 
 RPI/script_py is the python script to be run on the RPI. 
 
