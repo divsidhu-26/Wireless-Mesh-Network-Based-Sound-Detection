@@ -25,5 +25,5 @@ Just run this on the RPI terminal.
 
 ### Xbee Modules
 [XCTU software](https://www.digi.com/products/xbee-rf-solutions/xctu-software/xctu) has been used for the working of the xbee.
-XCTU_Configuration files are the configuration files for the xbee. 
+<br>XCTU_Configuration files are the configuration files for the xbee. <br>
 Import these and you are good to go.
