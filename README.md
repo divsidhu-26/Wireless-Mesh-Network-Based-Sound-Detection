@@ -21,7 +21,7 @@ To replicate our settings, do the following:-
 
 ### RPI
 RPI/rpi_script.py is the python script to be run on the RPI.
-Just run on this terminal.
+Just run this on the RPI terminal.
 
 ### Xbee Modules
 [XCTU software](https://www.digi.com/products/xbee-rf-solutions/xctu-software/xctu) has been used for the working of the xbee.
