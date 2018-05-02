@@ -21,7 +21,7 @@ To replicate our settings, do the following:-
 ###### PIN DIAGRAM
 ![Pin Diagram](https://github.com/divsidhu-26/cop315/blob/master/Arduino/pin_diagram.png)
 <br>The arduino module is connected to a sound sensor (KY037) which detects the sound, a battery which powers the arduino and 
-an xbee which takes care of communication to others.
+an xbee which takes care of communication to other nodes which is better explained [here](https://cop315.wordpress.com).
 
 ### RPI
 RPI/rpi_script.py is the python script to be run on the RPI.
