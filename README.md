@@ -8,6 +8,8 @@ To run the website on your laptop,
 4. python manage.py runserver <port-number>
 Voila! Website gets deployed at http://127.0.0.1:<port-number>
 
+The components of the website and their respective implementation languages can be found [here](https://cop315.wordpress.com/server-and-website/).
+
 ### Arduino
 The Arduino folder contains the codes for the arduinos
 1. r1ino: Arduino code for a node not on the edge of the mesh. It transmits value received both from a sound sensor and from      </t> another sensor node
