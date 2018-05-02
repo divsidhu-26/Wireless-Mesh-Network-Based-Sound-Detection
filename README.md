@@ -28,7 +28,7 @@ an xbee which takes care of communication to other nodes which is better explain
 ### RPI
 RPI/rpi_script.py is the python script to be run on the RPI.
 This script waits for an input from the arduinos and then based on this input, uploads the data to the server/website.
-The uploading is done by a rest-framework powered API which has already been writtern along with the website.
+The uploading is done by a rest-framework powered API which has already been coded inside the website.
 
 ### Xbee Modules
 [XCTU software](https://www.digi.com/products/xbee-rf-solutions/xctu-software/xctu) has been used for the working of the xbee.
